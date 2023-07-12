@@ -27,7 +27,7 @@ install python3: https://www.python.org/
 
 
 
-If you want to use a Keyfile, try this:
+If you want to use a Keyfile (for network transaction), try this:
   ``` 
   # a tool to enrypt & decrypt files in python3
   # Fernet is an implementation of symmetric authenticated cryptography
@@ -86,6 +86,6 @@ If you want to use a Keyfile, try this:
   generate_key()  # generate the key to encrypt & decrypt, keyfile calls secure.key
   key = load_key() # load the key from file 'secure.key'
   file = "test.csv" # thats the filename to encrypt
-  encrypt(file, key)
+  encrypt(file, key) # encrypt the file
   decrypt(file, key) # decrypt the file
   ```
